@@ -32,12 +32,12 @@ const SlidingBanner: React.FC<SlidingBannerProps> = ({ images, interval = 3000 }
     setCurrentIndex((prevIndex) => prevIndex - 1);
     setIsAnimating(true);
   };
-  const handleDragStart = (clientX) => {
+  const handleDragStart = (clientX: number): void => {
     setIsDragging(true);
     setDragStartX(clientX);
     setIsAnimating(false);
   };
-  const handleDragMove = (clientX) => {
+  const handleDragMove = (clientX: number) => {
     if (!isDragging) return;
     const offset = clientX - dragStartX;
     setDragOffset(offset);
@@ -57,10 +57,14 @@ const SlidingBanner: React.FC<SlidingBannerProps> = ({ images, interval = 3000 }
       setIsAnimating(false);
       if (currentIndex === slides.length - 1) {
         setCurrentIndex(1);
-        sliderRef.current.style.transition = 'none';
+        if (sliderRef.current) {
+          sliderRef.current.style.transition = 'none';
+        }
       } else if (currentIndex === 0) {
         setCurrentIndex(slides.length - 2);
-        sliderRef.current.style.transition = 'none';
+        if (sliderRef.current) {
+          sliderRef.current.style.transition = 'none';
+        }
       }
     };
     const slider = sliderRef.current;
