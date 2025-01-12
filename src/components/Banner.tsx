@@ -2,7 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-const SlidingBanner = ({ images, interval = 3000 }) => {
+interface SlidingBannerProps {
+  images: string[]; // Array of image URLs (string type)
+  interval?: number; // Optional property with a default value
+}
+
+const SlidingBanner: React.FC<SlidingBannerProps> = ({ images, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
