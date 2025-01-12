@@ -22,6 +22,7 @@ module.exports = {
       aspectRatio: {
         'banner': '5 / 2',
         'country': '5 / 3',
+        'den': '1 / 1',
       },
 
     },

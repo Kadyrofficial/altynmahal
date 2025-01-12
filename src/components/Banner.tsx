@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 interface SlidingBannerProps {
-  images: string[]; // Array of image URLs
-  interval?: number; // Optional interval in milliseconds
+  images: string[];
+  interval?: number;
 }
 
 const SlidingBanner: React.FC<SlidingBannerProps> = ({ images, interval = 3000 }) => {
@@ -16,7 +16,6 @@ const SlidingBanner: React.FC<SlidingBannerProps> = ({ images, interval = 3000 }
 
   const slides = [images[images.length - 1], ...images, images[0]];
 
-  // Auto-slide logic
   useEffect(() => {
     if (isDragging || isAnimating) return;
     const autoSlide = setInterval(() => {
@@ -106,7 +105,7 @@ const SlidingBanner: React.FC<SlidingBannerProps> = ({ images, interval = 3000 }
   return (
     <div className="w-full flex flex-row justify-center">
       <div
-        className="w-full max-w-[1600px] overflow-hidden relative cursor-grab active:cursor-grabbing"
+        className="w-full m-[10px] overflow-hidden relative cursor-grab active:cursor-grabbing"
         onMouseDown={(e) => handleDragStart(e.clientX)}
         onMouseMove={(e) => handleDragMove(e.clientX)}
         onMouseUp={handleDragEnd}

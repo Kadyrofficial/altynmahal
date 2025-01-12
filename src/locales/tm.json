@@ -7,6 +7,9 @@
   "steps": "Işiň gidişi",
   "about": "Biz bilen",
   "contact": "Habarlaşmak",
+  "heading1": "Importyň tygşytly, goragly",
+  "heading2": "we aňsat usuly",
+  "services": "Hyzmatymyz",
   "service1title": "Gözleg",
   "service1content": "Harytlary lomaý we bölekleýin zawod (hakyky) bahasyndan tapyp, Zawoddan harydyň nusgasyny alyp bermek",
   "service2title": "Satyn almak",
@@ -17,5 +20,15 @@
   "china": "Hytaý",
   "malaysiya": "Malaziýa",
   "vyetnam": "Wýetnam",
-  "thailand": "Tailand"
+  "thailand": "Tailand",
+  "1steptitle": "Gözleg we baha almak",
+  "1stepcontent": "",
+  "2steptitle": "Nusga alyp bermek",
+  "2stepcontent": "",
+  "3steptitle": "Ýoly hasaplamak",
+  "3stepcontent": "",
+  "4steptitle": "Müşderi bilen ylalaşyk",
+  "4stepcontent": "",
+  "5steptitle": " Eline gowşurmak",
+  "5stepcontent": ""
 }

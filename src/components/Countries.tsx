@@ -8,8 +8,8 @@ const Countries = () => {
     const { t } = useTranslation();
   return (
     <section className="w-full flex flex-col items-center justify-center bg-lightgray">
-        <div className='w-full max-w-[1600px] px-[30px] text-[30px] lg:text-[35px] font-medium pt-[40px]'>{t('coutryserve')}</div>
-        <div className="py-[30px] px-[15px] flex flex-wrap justify-center w-full max-w-[1600px] ">
+        <div className='w-full px-[30px] sm:px-[50px] text-[30px] lg:text-[35px] font-medium pt-[40px]'>{t('coutryserve')}</div>
+        <div className="py-[30px] px-[15px] flex flex-wrap justify-center w-full  ">
         <China />
         <Malaysiya />
         <Vyetnam />

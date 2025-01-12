@@ -7,6 +7,9 @@
   "steps": "Steps",
   "about": "About",
   "contact": "Contact",
+  "heading1": "The efficient, secure",
+  "heading2": "and easy method of import",
+  "services": "Services",
   "service1title": "Search",
   "service1content": "Find products at wholesale and retail factory (real) prices, and arrange to receive product samples directly from the factory.",
   "service2title": "Purchase",
@@ -17,5 +20,15 @@
   "china": "China",
   "malaysiya": "Malaysiya",
   "vyetnam": "Vietnam",
-  "thailand": "Thailand"
+  "thailand": "Thailand",
+  "1steptitle": "Research and evaluation",
+  "1stepcontent": "",
+  "2steptitle": "Provide a sample",
+  "2stepcontent": "",
+  "3steptitle": "Calculate the route",
+  "3stepcontent": "",
+  "4steptitle": "Agreement with the client",
+  "4stepcontent": "",
+  "5steptitle": "Deliver to hand",
+  "5stepcontent": ""
 }

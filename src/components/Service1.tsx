@@ -28,11 +28,16 @@ const Service1 = () => {
   }, []);
 
   return (
-        <div ref={boxRef} className={`w-full max-w-[500px] bg-white overflow-hidden flex flex-col drop-shadow-lightshad hover:drop-shadow-lightshadhov p-[30px] m-[15px] transform transition-transform duration-[1.5s] ease-in-out ${isVisible ?  "translate-x-0 opacity-100" : "-translate-x-[25%]"}`}>
-          <img src="/search.png" className="w-full object-contain aspect-square" alt="" />
-          <span className='font-medium text-[35px]'>{t('service1title')}</span>
-          <span className='font-[400] text-[20px] sm:text-[24px]'>{t('service1content')}</span>
+        <>
+        <div className={`w-full md:w-1/2 xl:w-1/3 p-[15px] `}>
+          <div ref={boxRef} className={`w-full h-full bg-white overflow-hidden flex flex-col drop-shadow-lightshad hover:drop-shadow-lightshadhov p-[30px] transform transition-transform duration-[1s] ease-in-out ${isVisible ?  "translate-x-0 opacity-100" : "-translate-x-[15%]"}`}>
+            <img src="/search.png" className="w-full object-contain aspect-square" alt="" />
+            <span className='font-medium text-[35px]'>{t('service1title')}</span>
+            <span className='font-[400] text-[20px] sm:text-[24px]'>{t('service1content')}</span>
+          </div>
         </div>
+
+        </>
   );
 };
 

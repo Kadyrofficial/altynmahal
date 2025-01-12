@@ -4,7 +4,7 @@ function Header() {
     const { t } = useTranslation();
     return (
     <>
-        <header className='fixed z-50 w-full h-[70px] bg-white flex justify-between items-center drop-shadow-shad px-[5px] lg:px-[20px]'>
+        <header className='fixed z-50 w-full h-[80px] bg-white flex justify-between items-center drop-shadow-shad px-[5px] lg:px-[20px]'>
             <a href="/" className='flex items-center'>
                 <img src="/logo.png" alt="Altyn Mahal" className='w-[70px] p-[13px] cursor-pointer' />
                 <span className='font-medium text-[22px] px-[10px] text-black'>{t('title')}</span>
