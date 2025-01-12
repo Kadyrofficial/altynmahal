@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useTranslation } from 'react-i18next';
+import { useState, useEffect, useRef } from "react";
+// import { useTranslation } from 'react-i18next';
 
 const Intro = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const boxRef = useRef(null);
 

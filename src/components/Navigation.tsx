@@ -6,7 +6,7 @@ function Navigation() {
     return (
     <>
             <input type="checkbox" id="burger-toggle" className='block md:hidden' />
-            <label for="burger-toggle" className="burger-menu block md:hidden" >
+            <label htmlFor="burger-toggle" className="burger-menu block md:hidden" >
             <div className="line block md:hidden"></div>
             <div className="line block md:hidden"></div>
             <div className="line block md:hidden"></div>
