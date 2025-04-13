@@ -1,0 +1,18 @@
+{
+  "Home": {
+    "title": "Altyn Mahal",
+    "select_language": "Dili saýlaň"
+  },
+  "Hero": {
+    "title": "Importyn tygsytly, goragly we ansat usuly",
+    "subtitle": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sunt perspiciatis accusamus?",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Menu": {
+    "services": "Services",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact"
+  }
+}
