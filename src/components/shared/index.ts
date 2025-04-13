@@ -1,0 +1,6 @@
+export { Header } from './header'
+export { Footer } from './footer'
+export { Banner } from './banner'
+export { Services } from './services'
+export { Contact } from './contact'
+export { FAQ } from './faq'
