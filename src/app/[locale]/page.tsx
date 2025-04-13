@@ -1,7 +1,7 @@
 import { About, Banner, Contact, FAQ, Footer, Header, Hero, Services } from "@/components/shared";
 import { cn } from "@/lib/utils";
 import { Search, ShoppingCart, Truck } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from 'next-intl/server'
 import React from "react";
 
 
@@ -9,8 +9,8 @@ interface Props {
   className?: string
 }
 
-export default function Home({ className }: Props) {
-  const t = useTranslations('Home')
+export default async function Home({ className }: Props) {
+  const t = await getTranslations('Home')
 
   const menuData = [
     {
