@@ -1,5 +1,4 @@
 import { About, Banner, Contact, FAQ, Footer, Header, Hero, Services } from "@/components/shared";
-import { cn } from "@/lib/utils";
 import { Search, ShoppingCart, Truck } from "lucide-react";
 import { getTranslations } from 'next-intl/server'
 import React from "react";
