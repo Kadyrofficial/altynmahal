@@ -5,11 +5,7 @@ import { getTranslations } from 'next-intl/server'
 import React from "react";
 
 
-interface Props {
-  className?: string
-}
-
-export default async function Home({ className }: Props) {
+export default async function Home() {
   const t = await getTranslations('Home')
 
   const menuData = [
@@ -97,19 +93,19 @@ export default async function Home({ className }: Props) {
       "title_1": t('service-1-title-1'),
       "title_2": t('service-1-title-2'),
       "description": t('service-1-description'),
-      "icon": <Search size={45} className={cn('stroke-primary', className)} />
+      "icon": <Search size={45} className='stroke-primary' />
     },
     {
       "title_1": t('service-2-title-1'),
       "title_2": t('service-2-title-2'),
       "description": t('service-2-description'),
-      "icon": <ShoppingCart size={45} className={cn('stroke-primary', className)} />
+      "icon": <ShoppingCart size={45} className='stroke-primary' />
     },
     {
       "title_1": t('service-3-title-1'),
       "title_2": t('service-3-title-2'),
       "description": t('service-3-description'),
-      "icon": <Truck size={45} className={cn('stroke-primary', className)} />
+      "icon": <Truck size={45} className='stroke-primary' />
     },
   ]
 
