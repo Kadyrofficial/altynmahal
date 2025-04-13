@@ -4,11 +4,12 @@ import { Search, ShoppingCart, Truck } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React from "react";
 
+
 interface Props {
   className?: string
 }
 
-const Home: React.FC<Props> = ({ className }) => {
+export default function Home({ className }: Props) {
   const t = useTranslations('Home')
 
   const menuData = [
@@ -125,5 +126,3 @@ const Home: React.FC<Props> = ({ className }) => {
     </>
   );
 }
-
-export default Home
