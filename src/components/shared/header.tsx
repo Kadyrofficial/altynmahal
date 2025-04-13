@@ -61,25 +61,27 @@ export const Header: React.FC<Props> = ({ className, menuData, languageData }) =
         ))}
       </PopupContainer>
       <Nav isOnUse={isNavInUse} isOpen={isNavOpen} onToggle={handleNavToggle} logo={logo} data={menuData}></Nav>
-      <header className={cn('fixed z-70 w-full h-12 px-1 flex justify-between bg-zinc-100/75 backdrop-blur-md', className)}>
-        <HeaderItem link={"#home"}>
-          {logo}
-        </HeaderItem>
-        <HeaderItem className={cn('hidden sm:flex *:mx-2 *:px-1 *:font-medium *:h-full *:flex *:items-center', className)}>
-          {menuData.map((item, index) => (
-            <Link key={index} href={item.link}>
-              {item.title}
-            </Link>
-          ))}
-        </HeaderItem>
-        <HeaderItem>
-          <HeaderItem className={cn('cursor-pointer', className)} onClick={handleLanguageToggle}>
-            <LanguagesIcon strokeWidth={1.5} />
+      <header className={cn('fixed z-70 w-full flex flex-col items-center h-12 px-1 bg-zinc-100/75 backdrop-blur-md', className)}>
+        <div className={cn('flex justify-between h-full w-full max-w-7xl', className)}>
+          <HeaderItem link={"#home"}>
+            {logo}
           </HeaderItem>
-          <HeaderItem className={cn('cursor-pointer sm:hidden', className)} onClick={handleNavToggle}>
-            <MenuIcon strokeWidth={1.5} />
+          <HeaderItem className={cn('hidden sm:flex *:mx-2 *:px-1 *:font-medium *:h-full *:flex *:items-center', className)}>
+            {menuData.map((item, index) => (
+              <Link key={index} href={item.link}>
+                {item.title}
+              </Link>
+            ))}
           </HeaderItem>
-        </HeaderItem>
+          <HeaderItem>
+            <HeaderItem className={cn('cursor-pointer', className)} onClick={handleLanguageToggle}>
+              <LanguagesIcon strokeWidth={1.5} />
+            </HeaderItem>
+            <HeaderItem className={cn('cursor-pointer sm:hidden', className)} onClick={handleNavToggle}>
+              <MenuIcon strokeWidth={1.5} />
+            </HeaderItem>
+          </HeaderItem>
+        </div>
       </header>
     </>
   )
