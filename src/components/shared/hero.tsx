@@ -50,7 +50,7 @@ export const Hero: React.FC<Props> = ({ className }) => {
           <div className={cn('w-3/5 *:h-full', className)}>
             <div className={cn('bg-white/75 backdrop-blur-sm rounded-lg p-4 flex', className)}>
               <div className={cn('pr-10 py-2 flex flex-col justify-between', className)}>
-                <p className={cn('font-medium text-xl xl:text-2xl', className)}>We have all kind of solutions to deliver your goods</p>
+                <p className={cn('font-medium text-xl xl:text-2xl', className)}>{t('hero-1-content')}</p>
                 <Link href={"#services"} className={cn('', className)}>
                   <Button variant={'link'} className={cn('text-zinc-900 hover:text-blue-900 cursor-pointer font-semibold', className)}>{t('our_services')}<ArrowUpRight /></Button>
                 </Link>
@@ -72,7 +72,7 @@ export const Hero: React.FC<Props> = ({ className }) => {
                 <Link href={"#contact"} className={cn('w-2/5', className)}>
                   <Button className={cn('cursor-pointer px-6', className)}>{t('contact')}</Button>
                 </Link>
-                <p className={cn('w-3/5 text-lg font-medium', className)}>"Mahal” H.J 2021-nji ýyldan bäri Hytaý, Malaziýa, Türkiýe</p>
+                <p className={cn('w-3/5 text-lg font-medium', className)}>{t('hero-2-content')}</p>
               </div>
               <div>
                 

@@ -1,5 +1,5 @@
 import { About, Banner, Contact, FAQ, Footer, Header, Hero, Services } from "@/components/shared";
-import { Facebook, MailIcon, PhoneIcon, Search, ShoppingCart, Truck } from "lucide-react";
+import { MailIcon, PhoneIcon, Search, ShoppingCart, Truck } from "lucide-react";
 import { getTranslations } from 'next-intl/server'
 import React from "react";
 
