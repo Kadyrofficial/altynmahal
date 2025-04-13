@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Section } from "./section";
 import { useTranslations } from "next-intl";
 import Image from 'next/image'
 

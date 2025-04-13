@@ -6,7 +6,6 @@ import { Button } from "../ui";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { Banner } from "./banner";
 
 
 interface Props {
@@ -14,7 +13,7 @@ interface Props {
 }
 
 
-const ContactLink: React.FC<Props> = ({ className }) => {
+const ContactLink: React.FC<Props> = () => {
   const t = useTranslations("Home")
 
   return (
@@ -25,7 +24,7 @@ const ContactLink: React.FC<Props> = ({ className }) => {
 };
 
 
-const AboutLink: React.FC<Props> = ({ className }) => {
+const AboutLink: React.FC<Props> = () => {
   const t = useTranslations("Home")
 
   return (
